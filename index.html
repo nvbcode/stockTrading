@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <title>Stock Reports</title>
+</head>
+
+<body>
+    <!-- container for all the contents -->
+    <div class='container'>
+        <!-- throw nav bar or search header up here -->
+        <header>
+            <nav class="navbar navbar-light bg-light">
+                <span class="navbar-brand mb-0 h1">Stock Search Application</span>
+
+                <!-- put a search bar -->
+                <form id="stockSearch">
+                    <label for='userInput'></label>
+                    <input type="text" id="userInput" placeholder="Search Stock">
+                    <input type='submit' id='addButton'>
+                </form>
+                <!-- add buttons below it -->
+
+            </nav>
+        </header>
+        <section>
+            <div class='row'>
+                <div class='col-sm-12' style='text-align:center'>
+                    <div class="buttonArea">
+                        <br>
+                        <br>
+
+                    </div>
+                </div>
+        </section>
+
+        <section>
+            <!-- where I will put all the stock details -->
+            <div class="stockInfo">
+                <div class='row'>
+                    <div class='col-lg-6 mr-auto' style='text-align:center'>
+                        <div class="companyInfo">
+                            <br>
+                            <br>
+
+                        </div>
+                    </div>
+                    <div class='col-lg-6 ml-auto' style='text-align:center'>
+                        <h2>Related Articles</h2>
+                        <div class="relatedArticles">
+
+                            <br>
+                            <br>
+
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+    </div>
+</body>
+
+
+</html>
