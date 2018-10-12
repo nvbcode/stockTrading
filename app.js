@@ -5,9 +5,9 @@ $(document).ready(function () {
 
     const getStockInfo = function () {
 
-        $('.companyInfo').empty();
+        $('#companyInfo').empty();
 
-        $('.relatedArticles').empty();
+        $('#relatedArticles').empty();
 
         const stock = $(this).attr('data-name');
         console.log(stock);
@@ -24,16 +24,16 @@ $(document).ready(function () {
             const stockPrice = response.quote.latestPrice;
             const getNews = response.news;
             console.log(getNews);
-            $('.companyInfo').append(`<br><img src=${logo}>`);
-            $('.companyInfo').append(`<br>${coName}`);
-            $('.companyInfo').append(`<br> ${stockPrice}`);
+            $('#companyInfo').append(`<img src=${logo}><br>`);
+            $('#companyInfo').append(`<h3>${coName}</h3><br>`);
+            $('#companyInfo').append(`<em>Current Stock Price:<em> ${stockPrice}<br>`);
 
             for (let i = 0; i < getNews.length; i++) {
                 let newsHeadline = getNews[i].headline;
                 console.log(newsHeadline);
                 let newsURL = getNews[i].url;
                 console.log(newsURL);
-                $('.relatedArticles').append(`<br><a href = '${newsURL}'> ${newsHeadline} </a>`);
+                $('#relatedArticles').append(`<a href = '${newsURL}'> ${newsHeadline} </a><br>`);
 
             };
         });
@@ -53,6 +53,7 @@ $(document).ready(function () {
                 validationList.push(stockSym);
             };
         });
+
         console.log(validationList);
     };
 
