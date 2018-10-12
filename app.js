@@ -33,7 +33,7 @@ $(document).ready(function () {
                 console.log(newsHeadline);
                 let newsURL = getNews[i].url;
                 console.log(newsURL);
-                $('#relatedArticles').append(`<a href = '${newsURL}'> ${newsHeadline} </a><br>`);
+                $('#relatedArticles').append(`<a href = '${newsURL}' target= "_blank" > ${newsHeadline}</a><br>`);
 
             };
         });
